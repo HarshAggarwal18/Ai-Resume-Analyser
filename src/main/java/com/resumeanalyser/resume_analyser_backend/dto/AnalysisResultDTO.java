@@ -8,13 +8,15 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class JobDTO {
-    private Long id;
+public class AnalysisResultDTO {
     private String title;
     private String company;
     private String location;
-    private String jobType;
-    private String experience;
-    private String description;
-    private List<String> skillsRequired;
+    private String employmentType;
+    private MatchScoreDTO matchScore;
+    private List<String> matchingSkills;
+    private List<String> missingSkills;
+    private String whyFit;
+    private String growthAreas;
+    private String summary;
 }

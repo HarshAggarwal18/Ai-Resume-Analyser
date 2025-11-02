@@ -7,8 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResumeDTO {
-    private String name;
-    private String email;
-    private String text; // full extracted resume text
+public class AIRequestDTO {
+    private ResumeDTO resume;
+    private JobDTO job;
 }

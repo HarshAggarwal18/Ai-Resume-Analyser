@@ -7,8 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResumeDTO {
-    private String name;
-    private String email;
-    private String text; // full extracted resume text
+public class MatchScoreDTO {
+    private double overall;
+    private double skillsMatch;
+    private double experienceMatch;
+    private double educationMatch;
 }
